@@ -5,7 +5,7 @@ int m=Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов: ");
 int n=Convert.ToInt32(Console.ReadLine());
 
-double[,] randomArrey = new double[m,n];
+int[,] randomArrey = new int[m,n];
 Console.Write("Введите позицию строки: ");
 int m1=Convert.ToInt32(Console.ReadLine());
 
