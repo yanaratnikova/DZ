@@ -13,18 +13,39 @@ namespace ConsoleApp8
 {
     class Program
     {
-        static void
-        Main(string[] args)
+        static void Main(string[] args)
         {
-            
-            string[] text = {"Hello", "2", "world", ":-)"};
-            for (int i = 0; i < text.Length; i++)
-            if (text[i].Length <= 3)
+                               //Ввод строк с клавиатуры и образование нового массива
+            string[] AS;
+            int count;
+            string s;
+            string [] AS2;
+            Console.WriteLine("Введите строку: ");
+            count = 0;
+            AS = new string[count];
+
+            do
             {
-            Console.Write(text[i] + "\t");
-            //Console.ReadKey();
+                s = Console.ReadLine();
+                if (s != "")
+                {
+                    count++;
+                    AS2 = new string[count];
+                    for (int i = 0; i < AS2.Length - 1; i++)
+                    
+                    AS2[i] = AS[i];
+                    AS2[count - 1] = s;
+                    AS = AS2;
+                    
+                   
+                }
             }
+            while (s != "");
+            for (int i = 0; i < AS.Length; i++)
+            if (AS[i].Length <= 3)
+            Console.Write(AS[i] + "\t");
             
+                       
         }
     }
 }
