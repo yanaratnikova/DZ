@@ -18,7 +18,7 @@ namespace ConsoleApp8
                                //Ввод строк с клавиатуры и образование нового массива
             string[] AS;
             int count;
-            string s=null;
+            string s = null;
             string [] AS2;
             Console.WriteLine("Введите строку: ");
             count = 0;
