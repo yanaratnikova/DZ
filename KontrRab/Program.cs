@@ -18,7 +18,7 @@ namespace ConsoleApp8
                                //Ввод строк с клавиатуры и образование нового массива
             string[] AS;
             int count;
-            string s;
+            string s=null;
             string [] AS2;
             Console.WriteLine("Введите строку: ");
             count = 0;
@@ -40,12 +40,13 @@ namespace ConsoleApp8
                    
                 }
             }
+            
             while (s != "");
+            Console.WriteLine("массив из строк, длина которых меньше, либо равна 3 символам: ");
             for (int i = 0; i < AS.Length; i++)
             if (AS[i].Length <= 3)
-            Console.Write(AS[i] + "\t");
             
-                       
+               Console.Write(AS[i] + "\t");                                          
         }
     }
 }
